@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Credits.OfflineShield"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="450">
+    
+    <Grid x:Name="LayoutRoot" Margin="0,0,0,0">
+    	<StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+            <TextBlock Foreground="Black" TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="45" Text="{Binding Path=LocalizedResources.Attention, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" FontSize="28" Text="{Binding Path=LocalizedResources.OfflineLine1, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Left" FontSize="28" Text="{Binding Path=LocalizedResources.OfflineLine2, Source={StaticResource LocalizedStrings}}"/>
+		</StackPanel>
+    </Grid>
+</UserControl>

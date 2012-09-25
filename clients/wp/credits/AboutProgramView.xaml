@@ -1,0 +1,71 @@
+﻿<eff:AnimatedBasePage
+    x:Class="Credits.AboutProgramView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:eff="clr-namespace:Credits.Effects"
+    xmlns:local="clr-namespace:Credits"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" Margin="24, 24, 24, 24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" x:Name="TitlePanel">
+            <local:Informer/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="0,0,0,0" x:Name="ContentPanel">
+            <TextBlock x:Name="Title" Text="{Binding Path=LocalizedResources.AboutUs, Source={StaticResource LocalizedStrings}}" Margin="-3,-10,0,0" FontFamily="Segoe WP Light" FontSize="72" Foreground="Black" eff:TurnstileFeatherAnimator.IsElement="True"/>
+            <ScrollViewer Margin="0,30,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Name="CreditsAbout" TextWrapping="Wrap" HorizontalAlignment="Left" FontFamily="Segoe WP Light" FontSize="20" Foreground="Black"/>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal">
+                            <TextBlock Name="CreditsCopyright" Text=" 2012  " FontFamily="Segoe WP Light" FontSize="25" Foreground="Black"/>
+                            <HyperlinkButton Margin="-14,0,0,0" Name="CreditsText" Click="OnHyperlinkClick" Content="{Binding Path=LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black"/>
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock Grid.Row="2" Name="Version" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black"/>
+                    <Grid Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Name="Developer" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black" TextWrapping="Wrap"/>
+                        <Image Grid.Row="2" Name="DeveloperLogo" HorizontalAlignment="Left" Width="300"/>
+                        <HyperlinkButton Grid.Row="4" Margin="-10,0,0,0" Name="DeveloperCite" Content="http://www.teleca.ru" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Click="OnHyperlinkClick" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black"/>
+                        <HyperlinkButton Grid.Row="6" Margin="-10,0,0,0" Name="DeveloperEmail" Content="support@teleca.com" HorizontalAlignment="Left" HorizontalContentAlignment="Left" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black"/>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</eff:AnimatedBasePage>

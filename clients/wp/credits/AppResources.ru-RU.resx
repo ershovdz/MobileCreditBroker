@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutCredits" xml:space="preserve">
+    <value>о Газета.Ru</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>о приложении</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Газета.Ru</value>
+  </data>
+  <data name="ArticleAppBarText" xml:space="preserve">
+    <value>статья</value>
+  </data>
+  <data name="ArticlesTitle" xml:space="preserve">
+    <value>статьи</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="AutoSelectCity" xml:space="preserve">
+    <value>автоопределение города</value>
+  </data>
+  <data name="Autoupdate" xml:space="preserve">
+    <value>автообновление</value>
+  </data>
+  <data name="BrowserQuery" xml:space="preserve">
+    <value>Для перехода по ссылке будет открыт браузер</value>
+  </data>
+  <data name="CacheClear" xml:space="preserve">
+    <value>автоочистка кэша</value>
+  </data>
+  <data name="CacheLifetime" xml:space="preserve">
+    <value>время жизни кэша</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Cite" xml:space="preserve">
+    <value>сайт: </value>
+  </data>
+  <data name="CommentsAppBarText" xml:space="preserve">
+    <value>комментарии</value>
+  </data>
+  <data name="ConnectionAbsence" xml:space="preserve">
+    <value>Отсутствует подключение к интернету. Невозможно выполнить операцию</value>
+  </data>
+  <data name="ConnectionLost" xml:space="preserve">
+    <value>Подключение к интернету потеряно</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>разработчик</value>
+  </data>
+  <data name="DownloadArticles" xml:space="preserve">
+    <value>Загрузка статей</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="FavoritesAddAppBarText" xml:space="preserve">
+    <value>добавить</value>
+  </data>
+  <data name="FavoritesDelAppBarText" xml:space="preserve">
+    <value>удалить</value>
+  </data>
+  <data name="FavoritesTitle" xml:space="preserve">
+    <value>избранное</value>
+  </data>
+  <data name="FiveDays" xml:space="preserve">
+    <value>5 дней</value>
+  </data>
+  <data name="FontMinusAppBarText" xml:space="preserve">
+    <value>уменьшить</value>
+  </data>
+  <data name="FontPlusAppBarText" xml:space="preserve">
+    <value>увеличить</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>частота обновления</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>{0} пунктов</value>
+  </data>
+  <data name="Items1_21" xml:space="preserve">
+    <value>{0} пункт</value>
+  </data>
+  <data name="Items2_3_4" xml:space="preserve">
+    <value>{0} пункта</value>
+  </data>
+  <data name="ListLimit" xml:space="preserve">
+    <value>ограничение списков</value>
+  </data>
+  <data name="Minutes1_21" xml:space="preserve">
+    <value>каждую {0} минуту</value>
+  </data>
+  <data name="Minutes1_5_21_25" xml:space="preserve">
+    <value>каждые {0} минуты</value>
+  </data>
+  <data name="Minutes4_21_24" xml:space="preserve">
+    <value>каждые {0} минут</value>
+  </data>
+  <data name="NewsTitle" xml:space="preserve">
+    <value>новости</value>
+  </data>
+  <data name="NothingAddedToFavorites" xml:space="preserve">
+    <value>Вы еще ничего не добавили в избранное</value>
+  </data>
+  <data name="NothingFound" xml:space="preserve">
+    <value>По запросу "{0}" в заметках ничего найдено не было</value>
+  </data>
+  <data name="OfflineLine1" xml:space="preserve">
+    <value>для работы раздела необходимо</value>
+  </data>
+  <data name="OfflineLine2" xml:space="preserve">
+    <value>подключение к интернету</value>
+  </data>
+  <data name="OfflineStartupText" xml:space="preserve">
+    <value>Потеряно подключение к интернету. Работа приложения будет продолжена в автономном режиме</value>
+  </data>
+  <data name="OneDay" xml:space="preserve">
+    <value>1 день</value>
+  </data>
+  <data name="OneWeek" xml:space="preserve">
+    <value>1 неделя</value>
+  </data>
+  <data name="PhotosTitle" xml:space="preserve">
+    <value>фото</value>
+  </data>
+  <data name="RefreshAppBarText" xml:space="preserve">
+    <value>обновить</value>
+  </data>
+  <data name="RemoveFromFavorites" xml:space="preserve">
+    <value>удалить из избранного</value>
+  </data>
+  <data name="SaveAppBarText" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="SearchAppBarText" xml:space="preserve">
+    <value>поиск</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>поиск</value>
+  </data>
+  <data name="SendArticle" xml:space="preserve">
+    <value>отправить статью</value>
+  </data>
+  <data name="SettingsAppBarText" xml:space="preserve">
+    <value>настройки</value>
+  </data>
+  <data name="ShareAppBarText" xml:space="preserve">
+    <value>отправить</value>
+  </data>
+  <data name="ShareDialogTitle" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="TwoDays" xml:space="preserve">
+    <value>2 дня</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>версия</value>
+  </data>
+</root>

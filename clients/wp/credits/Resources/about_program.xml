@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="Utf-8"?>
+<article id="about_credits" name="Информация" link="">
+	<developer>
+		<logo src="Resources/tel_logo_about.png"/>
+		<site>www.lab3d.ru</site>
+		<e-mail>support@lab3d.ru</e-mail>
+	</developer>
+	<version>0.0.1</version>
+</article>
+
