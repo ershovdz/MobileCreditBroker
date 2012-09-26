@@ -1,5 +1,5 @@
 ﻿<local:CreditsBaseView 
-    x:Class="Credits.CalculatorView"
+    x:Class="Credits.CreditOptionsView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -28,21 +28,10 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" x:Name="TitlePanel" Margin="0,0,0,0">
-            <local:Informer TitleText="Калькулятор"/>
+            <local:Informer TitleText=""/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" x:Name="ContentPanel" Margin="0,20,0,0">
-            <StackPanel x:Name="PaymentType" Orientation="Horizontal">
-                <TextBlock Text="Вид платежа:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <toolkit:ListPicker Margin="10,0,0,0" Width="270" FontFamily="Segoe WP Light" FontSize="25" Foreground="Black">
-                    <toolkit:ListPickerItem>
-                        <TextBlock Text="Аннуитетный" Margin="0,-4,0,0"/>
-                    </toolkit:ListPickerItem>
-                    <toolkit:ListPickerItem>
-                        <TextBlock Text="Другой какой-то вид" Margin="0,-4,0,0"/>
-                    </toolkit:ListPickerItem>
-                </toolkit:ListPicker>
-            </StackPanel>
             <StackPanel x:Name="Sum" Orientation="Horizontal">
                 <TextBlock Text="Сумма кредита:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
                 <TextBox Width="260" InputScope="Digits"/>
@@ -52,27 +41,15 @@
                 <TextBox Width="280" InputScope="Digits"/>
             </StackPanel>
             <StackPanel x:Name="Percentage" Orientation="Horizontal">
-                <TextBlock Text="Процентная ставка:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="215" InputScope="Digits"/>
-            </StackPanel>
-            <StackPanel x:Name="OneCommission" Orientation="Horizontal">
-                <TextBlock Text="Единовр. комиссия:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="215" InputScope="Digits"/>
-            </StackPanel>
-            <StackPanel x:Name="MonthCommission" Orientation="Horizontal">
-                <TextBlock Text="Ежемес. комиссия:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="230" InputScope="Digits"/>
-            </StackPanel>
-            <StackPanel x:Name="EarlyPayment" Orientation="Horizontal">
-                <TextBlock Text="Досрочный платеж:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="215" InputScope="Digits"/>
+                <TextBlock Text="Процент до:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
+                <TextBox Width="300" InputScope="Digits"/>
             </StackPanel>
         </StackPanel>
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="расчитать"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/search_appbar.png" Text="найти"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </local:CreditsBaseView>

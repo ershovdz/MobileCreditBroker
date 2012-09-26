@@ -27,10 +27,10 @@ using System.IO.IsolatedStorage;
 
 namespace Credits
 {
-    public partial class CreditSelectionView : CreditsBaseView
+    public partial class CreditOptionsView : CreditsBaseView
     {
         // Constructor
-        public CreditSelectionView()
+        public CreditOptionsView()
             : base()
         {
             InitializeComponent();
@@ -60,20 +60,6 @@ namespace Credits
             }
 
             return base.GetAnimation(animationType, toOrFrom);
-        }
-
-        void OnListBoxLoaded(object sender, RoutedEventArgs e)
-        {
-            (sender as ListBox).SelectedIndex = -1;
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ListBox lb = (sender as ListBox);
-            if (lb.SelectedIndex >= 0 && lb.SelectedIndex < lb.Items.Count)
-            {
-                NavigationService.Navigate(new Uri("/CreditOptionsView.xaml?Type=" + lb.SelectedIndex.ToString(), UriKind.Relative));
-            }
         }
     }
 }

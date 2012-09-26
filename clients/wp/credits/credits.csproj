@@ -69,6 +69,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreditOptionsView.xaml.cs">
+      <DependentUpon>CreditOptionsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreditSelectionView.xaml.cs">
       <DependentUpon>CreditSelectionView.xaml</DependentUpon>
     </Compile>
@@ -114,6 +117,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="AboutProgramView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CreditOptionsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -168,9 +175,19 @@
     <Resource Include="Images\Calculator.png" />
     <Resource Include="Images\credit_card.png" />
     <Resource Include="Images\search.png" />
+    <Resource Include="Images\credit_auto.png" />
+    <Resource Include="Images\credit_business.png" />
+    <Resource Include="Images\credit_card_icon.png" />
+    <Resource Include="Images\credit_education.png" />
+    <Resource Include="Images\credit_estate.png" />
+    <Resource Include="Images\credit_personal.png" />
+    <Resource Include="Images\deposit.png" />
     <Content Include="Resources\about_program.xml" />
     <Resource Include="Images\SplashScreenImage.jpg" />
     <Content Include="SplashScreenImage.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\search_appbar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\settings.png">

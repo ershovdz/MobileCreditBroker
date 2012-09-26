@@ -5,6 +5,7 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="728" 
@@ -30,7 +31,75 @@
             <local:Informer TitleText="Выбор кредита"/>
         </StackPanel>
 
-        <Grid Grid.Row="1" x:Name="ContentPanel">
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <ListBox Name="CategoriesList" tilteffect:TiltEffect.IsTiltEnabled="True" Foreground="Black" VerticalAlignment="Center" Loaded="OnListBoxLoaded" SelectionChanged="ListBox_SelectionChanged">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <toolkit:WrapPanel 
+                                    Name="Wrap_panel"
+                                    Orientation="Horizontal" 
+                                    ItemHeight="200"
+                                    ItemWidth="200"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBoxItem>
+                    <StackPanel x:Name="Estate" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/credit_estate.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Кредиты на недвижимость" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel x:Name="Auto" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/credit_auto.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Автокредит" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel x:Name="Personal" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/credit_personal.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Потребительские" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel x:Name="Cards" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/credit_card.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Кредитные карты" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel x:Name="Business" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/credit_business.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Кредиты для бизнеса" />
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel x:Name="Deposit" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                        <Image Stretch="UniformToFill"
+                                           Source="Images/deposit.png"
+                                           Height="140"
+                                           Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Депозиты" />
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+            <local:OfflineShield x:Name="OfflineShield" Visibility="Collapsed" Grid.ColumnSpan="3" />
+            <!--       <Button Content="Сохранить полосу" Height="72" HorizontalAlignment="Left" Margin="111,145,0,0" Name="btnSave" VerticalAlignment="Top" Width="284" Click="btnSave_Click" /> -->
         </Grid>
     </Grid>
 </local:CreditsBaseView>
