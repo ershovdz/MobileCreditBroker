@@ -1,0 +1,1508 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+<link href="http://api.uslugi.yandex.ru/1.0/banks" rel="self"/>
+<bank>
+<id>61</id>
+<name>Газпромбанк</name> 
+<company>ОАО «Газпромбанк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/61" rel="self"/>
+<link href="http://www.gazprombank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000661" rel="cbrf"/>
+</bank>
+<bank>
+<id>63</id>
+<name>ВТБ24</name>
+<company>ЗАО «Банк ВТБ 24»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/63" rel="self"/>
+<link href="http://www.vtb24.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000116" rel="cbrf"/>
+</bank>
+<bank>
+<id>64</id>
+<name>Альфа-Банк</name> 
+<company>ОАО «Альфа-Банк»</company> 
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/64" rel="self"/>
+<link href="http://www.alfabank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000036" rel="cbrf"/>
+<credits>
+<autocredit>
+<id>31741</id>
+<name>Кредит на приобретение нового автомобиля с разовой комиссией в долларах</name>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/autocredits/31741" rel="self"/>
+<link href="http://alfabank.ru/novosibirsk/retail/auto/corporate/" rel="www"/>
+<bank>
+<id>64</id>
+<name>Альфа-Банк</name>
+<company>ОАО «Альфа-Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/64" rel="self"/>
+<link href="http://www.alfabank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000036" rel="cbrf"/>
+</bank>
+<restrictions>Автокредит выдается только для орпоративных клиентов. Входит ли ваша компания-работодатель в список таких компаний, вы можете узнать в любом отделении банка, а также по телефонам (+7 495) 788-03-50 (для Москвы с 9:00 до 18:00, только по будням) и 8 800 333-6-333 (для звонков с мобильных телефонов и стационарных телефонов, зарегистрированных в регионах).</restrictions>
+<payment>
+<scheme>ANNUITY</scheme>
+<methods>
+<method>EPS</method>
+<method>ATM</method>
+<method>CLEARING_BASIS_PAYMENT</method>
+<method>RUSSIAN_POST</method>
+<method>BANK_OFFICE</method>
+<method>PAYMENT_TERMINAL</method>
+</methods>
+</payment>
+<comission>
+<disbursement-fee>
+<sum currency="USD">200</sum>
+</disbursement-fee>
+</comission>
+<advanced-repayment>
+<scheme>PARTIAL_AND_WHOLE</scheme>
+<moratorium>6 месяцев.</moratorium>
+<other-restrictions>Сумма досрочного погашения от 1000 долларов США.</other-restrictions>
+</advanced-repayment>
+<other-provided-documents>
+<documents>
+<document required="OBLIGATORY">APPLICATION_FORM</document>
+<document required="OBLIGATORY">PASSPORT</document>
+<document required="CHOOSINGLY">INTERNATIONAL_PASSPORT</document>
+<document required="CHOOSINGLY">DRIVING_LICENSE</document>
+</documents>
+<comment></comment>
+</other-provided-documents>
+<debtor-requirements>
+<debtor gender="MALE">
+<min-age>25</min-age>
+<max-repayment-age>65</max-repayment-age>
+</debtor>
+<debtor gender="FEMALE">
+<min-age>25</min-age>
+<max-repayment-age>65</max-repayment-age>
+</debtor>
+<registration>PERMANENT_REGION</registration>
+<citizenship/>
+<total-work-experience>Не меньше 1 года.</total-work-experience>
+<last-work-experience>От 3-х месяцев.</last-work-experience>
+<home-phone/>
+<restrictions>Доход не менее 8 000 рублей.</restrictions>
+</debtor-requirements>
+<credit-security>
+<guarantee-need>NOT_REQUIRED</guarantee-need>
+<pledge-need>OBLIGATORY</pledge-need>
+<acquired-property-pledge/>
+</credit-security>
+<decision-timing>
+<application-pendency>LESS_2_DAYS</application-pendency>
+</decision-timing>
+<additional-info>
+<fees-info>Неустойка за просрочку возврата кредита (по основному долгу и процентам) в размере 1% в день на сумму просроченной задолженности.</fees-info>
+<credit-delivery>
+<mode>FLAT_PAYMENT</mode>
+<methods>
+<method>DEBTOR_ACCOUNT</method>
+</methods>
+</credit-delivery>
+</additional-info>
+<insurance>
+<requirements>
+<requirement>KASKO</requirement>
+<requirement>OSAGO</requirement>
+</requirements>
+</insurance>
+<seller>SALES_CENTRE</seller>
+<vehicle-type>MOTOR_CAR</vehicle-type>
+<vendor-type>ANY</vendor-type>
+<age-type>NEW</age-type>
+<rates>
+<rate>
+<currency>USD</currency>
+<min-value>12.0</min-value>
+<max-value>17.0</max-value>
+<min-initial-instalment>10.0</min-initial-instalment>
+<min-period interval="YEAR">1</min-period>
+<max-period interval="MONTH">60</max-period>
+<min-sum currency="USD">4000</min-sum>
+<max-sum currency="USD">100000</max-sum>
+</rate>
+<rate>
+<currency>USD</currency>
+<min-value>12.0</min-value>
+<max-value>17.0</max-value>
+<min-initial-instalment>25.0</min-initial-instalment>
+<min-period interval="YEAR">1</min-period>
+<max-period interval="YEAR">6</max-period>
+<min-sum currency="USD">100001</min-sum>
+<max-sum currency="USD">200000</max-sum>
+</rate>
+</rates>
+</autocredit>
+</credits>
+</bank>
+<bank>
+<id>65</id>
+<name>ЮниКредит Банк</name>
+<company>ЗАО «ЮниКредит Банк»</company> 
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/65" rel="self"/>
+<link href="http://www.unicreditbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000005" rel="cbrf"/>
+</bank>
+<bank>
+<id>66</id>
+<name>Промсвязьбанк</name>
+<company>ОАО «Промсвязьбанк»</company> 
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/66" rel="self"/>
+<link href="http://www.psbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000927" rel="cbrf"/>
+</bank>
+<bank>
+<id>67</id>
+<name>Райффайзенбанк</name>
+<company>ЗАО «Райффайзенбанк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/67" rel="self"/>
+<link href="http://www.raiffeisen.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450016096" rel="cbrf"/>
+</bank>
+<bank>
+<id>68</id>
+<name>Росбанк</name> 
+<company>ОАО «АКБ Росбанк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/68" rel="self"/>
+<link href="http://www.rosbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000347" rel="cbrf"/>
+</bank>
+<bank>
+<id>82</id>
+<name>Уралсиб</name> 
+<company>ОАО «Уралсиб»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/82" rel="self"/>
+<link href="http://www.bankuralsib.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=800000002" rel="cbrf"/>
+</bank>
+<bank>
+<id>83</id>
+<name>Номос-Банк</name> 
+<company>ОАО «Номос-Банк»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/83" rel="self"/>
+<link href="http://www.nomos.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000319" rel="cbrf"/>
+</bank>
+<bank>
+<id>84</id>
+<name>ТрансКредитБанк</name> 
+<company>ОАО «ТрансКредитБанк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/84" rel="self"/>
+<link href="http://www.tcb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000282" rel="cbrf"/>
+</bank>
+<bank>
+<id>85</id>
+<name>АК Барс</name> 
+<company>ОАО «АКБ АК Барс»</company>
+<rating>
+<stars>4.0</stars>
+<value>A2</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/85" rel="self"/>
+<link href="http://www.akbars.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=920000005" rel="cbrf"/>
+</bank>
+<bank>
+<id>86</id>
+<name>Банк «Санкт-Петербург»</name> 
+<company>ОАО «Банк Санкт-Петербург»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/86" rel="self"/>
+<link href="http://www.bspb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000031" rel="cbrf"/>
+</bank>
+<bank>
+<id>87</id>
+<name>Ситибанк</name> 
+<company>ЗАО «КБ Ситибанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/87" rel="self"/>
+<link href="http://www.citibank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000496" rel="cbrf"/>
+</bank>
+<bank>
+<id>88</id>
+<name>Петрокоммерц</name> 
+<company>ОАО «КБ Петрокоммерц»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/88" rel="self"/>
+<link href="http://www.pkb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000161" rel="cbrf"/>
+</bank>
+<bank>
+<id>89</id>
+<name>Возрождение</name> 
+<company>ОАО «Банк Возрождение»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/89" rel="self"/>
+<link href="http://www.vbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=350000006" rel="cbrf"/>
+</bank>
+<bank>
+<id>90</id>
+<name>НБ «Траст»</name> 
+<company>ОАО «НБ Траст»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/90" rel="self"/>
+<link href="http://www.trust.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000028" rel="cbrf"/>
+</bank>
+<bank>
+<id>91</id>
+<name>БинБанк</name> 
+<company>ОАО «БинБанк»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/91" rel="self"/>
+<link href="http://www.binbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000499" rel="cbrf"/>
+</bank>
+<bank>
+<id>96</id>
+<name>ОТП Банк</name> 
+<company>ОАО «ОТП Банк»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa2</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/96" rel="self"/>
+<link href="http://www.otpbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000610" rel="cbrf"/>
+</bank>
+<bank>
+<id>98</id>
+<name>Русфинанс Банк</name> 
+<company>ООО «Русфинанс Банк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aa1</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/98" rel="self"/>
+<link href="http://www.rusfinancebank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=460000016" rel="cbrf"/>
+</bank>
+<bank>
+<id>99</id>
+<name>Ханты-Мансийский Банк</name> 
+<company>ОАО «Ханты-Мансийский Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/99" rel="self"/>
+<link href="http://www.khmb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=710000048" rel="cbrf"/>
+</bank>
+<bank>
+<id>100</id>
+<name>Глобэкс</name> 
+<company>ЗАО «КБ Глобэксбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/100" rel="self"/>
+<link href="http://www.globexbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000211" rel="cbrf"/>
+</bank>
+<bank>
+<id>101</id>
+<name>Зенит</name> 
+<company>ОАО «Банк Зенит»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/101" rel="self"/>
+<link href="http://www.zenit.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450001204" rel="cbrf"/>
+</bank>
+<bank>
+<id>127</id>
+<name>Татфондбанк</name> 
+<company>ОАО «АИКБ Татфондбанк»</company>
+<rating>
+<stars>3.0</stars>
+<value>Baa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/127" rel="self"/>
+<link href="http://tfb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=920000022" rel="cbrf"/>
+</bank>
+<bank>
+<id>135</id>
+<name>Севергазбанк</name> 
+<company>ОАО «КБ Севергазбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/135" rel="self"/>
+<link href="http://www.severgazbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=190000006" rel="cbrf"/>
+</bank>
+<bank>
+<id>165</id>
+<name>Трансстройбанк</name> 
+<company>ЗАО «АКБ Трансстройбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/165" rel="self"/>
+<link href="http://www.transstroybank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000632" rel="cbrf"/>
+</bank>
+<bank>
+<id>166</id>
+<name>Балтийский Банк Развития</name> 
+<company>ЗАО «АКБ Балтийский Банк Развития»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/166" rel="self"/>
+<link href="http://www.bbrbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=270000020" rel="cbrf"/>
+</bank>
+<bank>
+<id>168</id>
+<name>Евротраст</name> 
+<company>ЗАО «КБ Евротраст»</company>
+<rating>
+<stars>2.5</stars>
+<value>Ba1</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/168" rel="self"/>
+<link href="http://www.etrust.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000896" rel="cbrf"/>
+</bank>
+<bank>
+<id>173</id>
+<name>РоссельхозБанк</name> 
+<company>ОАО «РоссельхозБанк»</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/173" rel="self"/>
+<link href="http://www.rshb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450039042" rel="cbrf"/>
+</bank>
+<bank>
+<id>174</id>
+<name>Абсолют Банк</name> 
+<company>ЗАО «АКБ Абсолют Банк»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/174" rel="self"/>
+<link href="http://www.absolutbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000370" rel="cbrf"/>
+</bank>
+<bank>
+<id>175</id>
+<name>Нордеа Банк</name> 
+<company>ОАО «Нордеа Банк»</company>
+<rating>
+<stars>4.0</stars>
+<value>A1</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/175" rel="self"/>
+<link href="http://www.nordea.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000989" rel="cbrf"/>
+</bank>
+<bank>
+<id>176</id>
+<name>БНП Париба</name> 
+<company>ЗАО «БНП Париба»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/176" rel="self"/>
+<link href="http://www.bnpparibas.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450042062" rel="cbrf"/>
+</bank>
+<bank>
+<id>177</id>
+<name>Кредит Европа Банк</name> 
+<company>ЗАО «Кредит Европа Банк»</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/177" rel="self"/>
+<link href="http://www.crediteurope.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450034607" rel="cbrf"/>
+</bank>
+<bank>
+<id>183</id>
+<name>Международный Банк Азербайджана</name> 
+<company>ООО «МБА-Москва»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/183" rel="self"/>
+<link href="http://www.ibamoscow.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450041396" rel="cbrf"/>
+</bank>
+<bank>
+<id>184</id>
+<name>Инвестторгбанк</name> 
+<company>ОАО «АКБ Инвестторгбанк»</company>
+<rating>
+<stars>3.5</stars>
+<value>A3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/184" rel="self"/>
+<link href="http://www.itb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000607" rel="cbrf"/>
+</bank>
+<bank>
+<id>185</id>
+<name>НС Банк</name> 
+<company>ЗАО «КБ НС Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/185" rel="self"/>
+<link href="http://www.nsbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450001012" rel="cbrf"/>
+</bank>
+<bank>
+<id>241</id>
+<name>Тинькофф Кредитные Системы</name>
+<company>ЗАО "ТКС Банк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/241" rel="self"/>
+<link href="http://www.tcsbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000562" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/25/8/28e9c7d542cde3bfc7f166a7d1aefc63_240x38.png" rel="logo"/>
+</bank>
+<bank>
+<id>282</id>
+<name>Охотный Ряд</name> 
+<company>ООО «КБ Охотный ряд»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/282" rel="self"/>
+<link href="http://www.cbor.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450039650" rel="cbrf"/>
+</bank>
+<bank>
+<id>301</id>
+<name>Пушкино</name> 
+<company>ОАО «АБ Пушкино»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/301" rel="self"/>
+<link href="http://www.pushkino.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=460000006" rel="cbrf"/>
+<credits>
+<autocredit>
+<id>31743</id>
+<name>Кредит на приобретение автомобиля</name>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/autocredits/31741" rel="self"/>
+<link href="http://alfabank.ru/novosibirsk/retail/auto/corporate/" rel="www"/>
+<bank>
+<id>301</id>
+<name>Пушкино</name>
+<company>ОАО «АБ Пушкино»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/64" rel="self"/>
+<link href="http://www.alfabank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000036" rel="cbrf"/>
+</bank>
+<restrictions>Автокредит выдается только для орпоративных клиентов. Входит ли ваша компания-работодатель в список таких компаний, вы можете узнать в любом отделении банка, а также по телефонам (+7 495) 788-03-50 (для Москвы с 9:00 до 18:00, только по будням) и 8 800 333-6-333 (для звонков с мобильных телефонов и стационарных телефонов, зарегистрированных в регионах).</restrictions>
+<payment>
+<scheme>ANNUITY</scheme>
+<methods>
+<method>EPS</method>
+<method>ATM</method>
+<method>CLEARING_BASIS_PAYMENT</method>
+<method>RUSSIAN_POST</method>
+<method>BANK_OFFICE</method>
+<method>PAYMENT_TERMINAL</method>
+</methods>
+</payment>
+<comission>
+<disbursement-fee>
+<sum currency="USD">200</sum>
+</disbursement-fee>
+</comission>
+<advanced-repayment>
+<scheme>PARTIAL_AND_WHOLE</scheme>
+<moratorium>6 месяцев.</moratorium>
+<other-restrictions>Сумма досрочного погашения от 1000 долларов США.</other-restrictions>
+</advanced-repayment>
+<other-provided-documents>
+<documents>
+<document required="OBLIGATORY">APPLICATION_FORM</document>
+<document required="OBLIGATORY">PASSPORT</document>
+<document required="CHOOSINGLY">INTERNATIONAL_PASSPORT</document>
+<document required="CHOOSINGLY">DRIVING_LICENSE</document>
+</documents>
+<comment></comment>
+</other-provided-documents>
+<debtor-requirements>
+<debtor gender="MALE">
+<min-age>25</min-age>
+<max-repayment-age>65</max-repayment-age>
+</debtor>
+<debtor gender="FEMALE">
+<min-age>25</min-age>
+<max-repayment-age>65</max-repayment-age>
+</debtor>
+<registration>PERMANENT_REGION</registration>
+<citizenship/>
+<total-work-experience>Не меньше 1 года.</total-work-experience>
+<last-work-experience>От 3-х месяцев.</last-work-experience>
+<home-phone/>
+<restrictions>Доход не менее 8 000 рублей.</restrictions>
+</debtor-requirements>
+<credit-security>
+<guarantee-need>NOT_REQUIRED</guarantee-need>
+<pledge-need>OBLIGATORY</pledge-need>
+<acquired-property-pledge/>
+</credit-security>
+<decision-timing>
+<application-pendency>LESS_2_DAYS</application-pendency>
+</decision-timing>
+<additional-info>
+<fees-info>Неустойка за просрочку возврата кредита (по основному долгу и процентам) в размере 1% в день на сумму просроченной задолженности.</fees-info>
+<credit-delivery>
+<mode>FLAT_PAYMENT</mode>
+<methods>
+<method>DEBTOR_ACCOUNT</method>
+</methods>
+</credit-delivery>
+</additional-info>
+<insurance>
+<requirements>
+<requirement>KASKO</requirement>
+<requirement>OSAGO</requirement>
+</requirements>
+</insurance>
+<seller>SALES_CENTRE</seller>
+<vehicle-type>MOTOR_CAR</vehicle-type>
+<vendor-type>ANY</vendor-type>
+<age-type>NEW</age-type>
+<rates>
+<rate>
+<currency>USD</currency>
+<min-value>12.0</min-value>
+<max-value>17.0</max-value>
+<min-initial-instalment>10.0</min-initial-instalment>
+<min-period interval="YEAR">1</min-period>
+<max-period interval="MONTH">60</max-period>
+<min-sum currency="USD">4000</min-sum>
+<max-sum currency="USD">100000</max-sum>
+</rate>
+<rate>
+<currency>USD</currency>
+<min-value>12.0</min-value>
+<max-value>17.0</max-value>
+<min-initial-instalment>25.0</min-initial-instalment>
+<min-period interval="YEAR">1</min-period>
+<max-period interval="YEAR">6</max-period>
+<min-sum currency="USD">100001</min-sum>
+<max-sum currency="USD">200000</max-sum>
+</rate>
+</rates>
+</autocredit>
+</credits>
+</bank>
+<bank>
+<id>321</id>
+<name>Сберкред Банк</name> 
+<company>ЗАО «АКБ Банк сбережений и кредита»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/321" rel="self"/>
+<link href="http://www.sbercred.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000512" rel="cbrf"/>
+</bank>
+<bank>
+<id>381</id>
+<name>Банк Русский Стандарт</name> 
+<company>ЗАО "Банк Русский Стандарт"</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/381" rel="self"/>
+<link href="http://www.rsb.ru/?utm_source=Yandex_Uslugi&amp;utm_medium=action&amp;utm_campaign=Yandex_Uslugi" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000359" rel="cbrf"/>
+</bank>
+<bank>
+<id>764</id>
+<name>ТЕТРАПОЛИС</name> 
+<company>ЗАО КБ "ТЕТРАПОЛИС"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/764" rel="self"/>
+<link href="http://www.tetrapolis.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000005" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/43/14/058dd2f119b4db83ed643f2d8ab60ecd_214x74.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>981</id>
+<name>ИнтрастБанк</name> 
+<company>ОАО «АКБ ИнтрастБанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/981" rel="self"/>
+<link href="http://www.intrustbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450001135" rel="cbrf"/>
+</bank>
+<bank>
+<id>3421</id>
+<name>Банк РОСТ</name> 
+<company>ОАО БАНК "РОСТ"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3421" rel="self"/>
+<link href="http://www.rostbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000515" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/37/88/e3ef5e7e496dd2695c2d782b37eeb33f_58x80.png" rel="logo"/>
+</bank>
+<bank>
+<id>3441</id>
+<name>Ренессанс Кредит</name> 
+<company>ООО КБ “Ренессанс Капитал”</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3441" rel="self"/>
+<link href="http://www.rencredit.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450039265" rel="cbrf"/>
+</bank>
+<bank>
+<id>3521</id>
+<name>Тойота Банк</name> 
+<company>ЗАО «Тойота Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3521" rel="self"/>
+<link href="http://www.toyota-bank.ru" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450053656" rel="cbrf"/>
+</bank>
+<bank>
+<id>3541</id>
+<name>ДжиИ Мани Банк</name> 
+<company>ЗАО "ДжиИ Мани Банк"</company>
+<rating>
+<stars>4.5</stars>
+<value>Aa3</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3541" rel="self"/>
+<link href="http://www.gemoney.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450035692" rel="cbrf"/>
+</bank>
+<bank>
+<id>3701</id>
+<name>ЛОКО-Банк</name> 
+<company>ЗАО КБ "ЛОКО-Банк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3701" rel="self"/>
+<link href="http://www.lockobank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000580" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/38/16/da560825382d90cb730b3644d9d49989_107x80.png" rel="logo"/>
+</bank>
+<bank>
+<id>3721</id>
+<name>Стройкредит</name> 
+<company>ОАО КБ "Стройкредит"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3721" rel="self"/>
+<link href="http://www.stroycredit.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000167" rel="cbrf"/>
+</bank>
+<bank>
+<id>3801</id>
+<name>РосДорБанк</name> 
+<company>ОАО «РосДорБанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3801" rel="self"/>
+<link href="http://www.rdb.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000097" rel="cbrf"/>
+</bank>
+<bank>
+<id>3861</id>
+<name>Морской Банк</name> 
+<company>ОАО «Морской Акционерный Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/3861" rel="self"/>
+<link href="http://www.maritimebank.com/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000712" rel="cbrf"/>
+</bank>
+<bank>
+<id>9041</id>
+<name>Соцгорбанк</name> 
+<company>ОАО КБ «Соцгорбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/9041" rel="self"/>
+<link href="http://www.sotsgorbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=460000033" rel="cbrf"/>
+</bank>
+<bank>
+<id>17481</id>
+<name>Союз</name> 
+<company>ОАО АКБ «Союз»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/17481" rel="self"/>
+<link href="http://www.banksoyuz.ru/ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000371" rel="cbrf"/>
+</bank>
+<bank>
+<id>17541</id>
+<name>Связной Банк</name> 
+<company>ЗАО «Связной Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/17541" rel="self"/>
+<link href="http://www.svyaznoybank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000221" rel="cbrf"/>
+</bank>
+<bank>
+<id>18181</id>
+<name>Таврический</name> 
+<company>ОАО Санкт-Петербургский АКБ «Таврический»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18181" rel="self"/>
+<link href="http://www.tavrich.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=400000009" rel="cbrf"/>
+</bank>
+<bank>
+<id>18221</id>
+<name>Огни Москвы</name> 
+<company>ООО КБ «Огни Москвы»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18221" rel="self"/>
+<link href="http://www.ognm.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000384" rel="cbrf"/>
+</bank>
+<bank>
+<id>18222</id>
+<name>Национальный стандарт</name> 
+<company>ООО КБ «Национальный стандарт»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18222" rel="self"/>
+<link href="http://www.ns-bank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450041932" rel="cbrf"/>
+</bank>
+<bank>
+<id>18361</id>
+<name>Российский Капитал</name> 
+<company>ОАО АКБ «Российский Капитал»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18361" rel="self"/>
+<link href="http://www.roscap.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000375" rel="cbrf"/>
+</bank>
+<bank>
+<id>18781</id>
+<name>ФОНДСЕРВИСБАНК</name> 
+<company>ОАО «ФОНДСЕРВИСБАНК»</company>
+<rating>
+<stars>3.0</stars>
+<value>Baa2</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18781" rel="self"/>
+<link href="http://www.fundservice.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450001067" rel="cbrf"/>
+</bank>
+<bank>
+<id>18801</id>
+<name>ИнтерПрогрессБанк</name> 
+<company>ИнтерПрогрессБанк</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18801" rel="self"/>
+<link href="http://www.ipb.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000696" rel="cbrf"/>
+</bank>
+<bank>
+<id>18821</id>
+<name>Банк24.ру</name> 
+<company>«Банк24.ру» (ОАО)</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/18821" rel="self"/>
+<link href="http://www.bank24.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=650000030" rel="cbrf"/>
+</bank>
+<bank>
+<id>19161</id>
+<name>Дил-Банк</name> 
+<company>ООО «Дил-Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19161" rel="self"/>
+<link href="http://deal-bank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450039972" rel="cbrf"/>
+</bank>
+<bank>
+<id>19162</id>
+<name>Москомприватбанк</name> 
+<company>ЗАО МКБ «Москомприватбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19162" rel="self"/>
+<link href="http://www.privatbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000975" rel="cbrf"/>
+</bank>
+<bank>
+<id>19163</id>
+<name>София</name> 
+<company>ЗАО АКБ «София»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19163" rel="self"/>
+<link href="http://www.sofia.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000940" rel="cbrf"/>
+</bank>
+<bank>
+<id>19164</id>
+<name>ОПМ-Банк</name> 
+<company>ООО КБ «ОПМ-Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19164" rel="self"/>
+<link href="http://www.opmbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000592" rel="cbrf"/>
+</bank>
+<bank>
+<id>19165</id>
+<name>Образование</name> 
+<company>ЗАО АКИБ «Образование»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19165" rel="self"/>
+<link href="http://www.obrbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000087" rel="cbrf"/>
+</bank>
+<bank>
+<id>19181</id>
+<name>Народный кредит</name> 
+<company>ОАО Банк «Народный кредит»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19181" rel="self"/>
+<link href="http://www.narcred.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=800000011" rel="cbrf"/>
+</bank>
+<bank>
+<id>19182</id>
+<name>МАСТ-Банк</name> 
+<company>ОАО КБ «МАСТ-Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19182" rel="self"/>
+<link href="http://www.mastbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000830" rel="cbrf"/>
+</bank>
+<bank>
+<id>19221</id>
+<name>РосЕвроБанк</name> 
+<company>ОАО АКБ «РосЕвроБанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19221" rel="self"/>
+<link href="http://www.rosevrobank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000844" rel="cbrf"/>
+</bank>
+<bank>
+<id>19261</id>
+<name>Газстройбанк</name> 
+<company>ОАО АКБ «Газстройбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19261" rel="self"/>
+<link href="http://www.gsb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450001027" rel="cbrf"/>
+</bank>
+<bank>
+<id>19262</id>
+<name>БТА-Казань</name> 
+<company>ОАО АКБ «БТА-Казань»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/19262" rel="self"/>
+<link href="http://www.bta-kazan.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=920000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>23439</id>
+<name>СИАБ</name> 
+<company>ОАО «Санкт-Петербургский Индустриальный Акционерный Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/23439" rel="self"/>
+<link href="http://www.siab.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=40000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>23441</id>
+<name>Сбербанк России</name> 
+<company>ОАО Сбербанк России</company>
+<rating>
+<stars>5.0</stars>
+<value>Aaa</value>
+</rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/23441" rel="self"/>
+<link href="http://www.sbrf.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=350000004" rel="cbrf"/>
+</bank>
+<bank>
+<id>23467</id>
+<name>ИпоТек Банк Северо-Западный филиал</name> 
+<company>ЗАО «ИпоТек Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/23467" rel="self"/>
+<link href="http://www.ibnw.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=360000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>23468</id>
+<name>ИпоТек Банк</name> 
+<company>ЗАО «ИпоТек Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/23468" rel="self"/>
+<link href="http://www.ipotek-bank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=360000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>23989</id>
+<name>Мосстройэкономбанк</name> 
+<company>ЗАО «Мосстройэкономбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/23989" rel="self"/>
+<link href="http://www.mseb.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000787" rel="cbrf"/>
+</bank>
+<bank>
+<id>26709</id>
+<name>Леноблбанк</name> 
+<company>ООО «Леноблбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/26709" rel="self"/>
+<link href="http://www.lenoblbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=610000005" rel="cbrf"/>
+</bank>
+<bank>
+<id>26711</id>
+<name>Витабанк</name> 
+<company>ОАО «Витабанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/26711" rel="self"/>
+<link href="http://vitabank.spb.ru/about/vita/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000003" rel="cbrf"/>
+</bank>
+<bank>
+<id>27173</id>
+<name>ПВ-Банк</name> 
+<company>ЗАО «ПВ-Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/27173" rel="self"/>
+<link href="http://pvbank.ru/moskow/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=730000003" rel="cbrf"/>
+</bank>
+<bank>
+<id>27409</id>
+<name>ДельтаКредит</name>
+<company>ЗАО «КБ ДельтаКредит»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/27409" rel="self"/>
+<link href="http://www.deltacredit.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450037034" rel="cbrf"/>
+</bank>
+<bank>
+<id>27900</id>
+<name>АйСиАйСиАй Банк Евразия</name> 
+<company>ООО «АйСиАйСиАй Банк Евразия»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/27900" rel="self"/>
+<link href="http://www.icicibankrussia.com/russian/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=290000004" rel="cbrf"/>
+</bank>
+<bank>
+<id>29124</id>
+<name>Росэнергобанк</name> 
+<company>Росэнергобанк</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/29124" rel="self"/>
+<link href="http://www.rosenergobank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=600000031" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/44/77/7d5a5e432b26f79520b6d0e67b18be79_240x44.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>32502</id>
+<name>Меткомбанк</name> 
+<company>ОАО «Металлургический коммерческий банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/32502" rel="self"/>
+<link href="http://www.metcombank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=190000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>32747</id>
+<name>Юниаструм Банк</name> 
+<company>ООО КБ «Юниаструм Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/32747" rel="self"/>
+<link href="http://www.uniastrum.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000614" rel="cbrf"/>
+</bank>
+<bank>
+<id>32755</id>
+<name>Инвестбанк</name> 
+<company>ОАО АКБ «Инвестбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/32755" rel="self"/>
+<link href="http://www.investbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=270000021" rel="cbrf"/>
+</bank>
+<bank>
+<id>33526</id>
+<name>Агропромкредит</name> 
+<company>ОАО КБ «Агропромкредит»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/33526" rel="self"/>
+<link href="http://www.apkbank.ru/ru/msk/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=460000012" rel="cbrf"/>
+</bank>
+<bank>
+<id>34221</id>
+<name>Восточный экспресс банк</name> 
+<company>ОАО «Восточный экспресс банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/34221" rel="self"/>
+<link href="http://www.express-bank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=100000004" rel="cbrf"/>
+</bank>
+<bank>
+<id>34589</id>
+<name>Автоторгбанк</name> 
+<company>ООО «АТБ»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/34589" rel="self"/>
+<link href="http://www.avtotorgbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000618" rel="cbrf"/>
+</bank>
+<bank>
+<id>34645</id>
+<name>Солид Банк</name> 
+<company>ЗАО «Солид Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/34645" rel="self"/>
+<link href="http://www.solid-bank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=300000005" rel="cbrf"/>
+</bank>
+<bank>
+<id>35406</id>
+<name>Примсоцбанк</name> 
+<company>ОАО «Примсоцбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/35406" rel="self"/>
+<link href="http://www.pskb.com/ru/index.html" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=50000004" rel="cbrf"/>
+</bank>
+<bank>
+<id>35444</id>
+<name>Банк Хоум Кредит</name> 
+<company>ООО "ХКФ Банк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/35444" rel="self"/>
+<link href="http://www.homecredit.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000650" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/96/48/130a458739414d8057a16deb1f7e4b72_135x80.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>36966</id>
+<name>Мособлбанк</name> 
+<company>ОАО «АКБ Московский областной банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/36966" rel="self"/>
+<link href="http://www.mosoblbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=820000042" rel="cbrf"/>
+</bank>
+<bank>
+<id>39158</id>
+<name>Роспромбанк</name> 
+<company>ООО КБ «Российский Промышленный Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/39158" rel="self"/>
+<link href="http://www.rosprombank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450001091" rel="cbrf"/>
+</bank>
+<bank>
+<id>39246</id>
+<name>АК Банк</name> 
+<company>ОАО «АктивКапитал Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/39246" rel="self"/>
+<link href="http://msk.acbank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=360000010" rel="cbrf"/>
+</bank>
+<bank>
+<id>39248</id>
+<name>Внешпромбанк</name> 
+<company>ООО «Внешнеэкономический промышленный банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/39248" rel="self"/>
+<link href="http://www.feib.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000919" rel="cbrf"/>
+</bank>
+<bank>
+<id>39250</id>
+<name>Первый Республиканский Банк</name> 
+<company>ОАО «Первый Республиканский Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/39250" rel="self"/>
+<link href="http://www.prb.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000147" rel="cbrf"/>
+</bank>
+<bank>
+<id>39694</id>
+<name>Финам</name> 
+<company>ЗАО «Банк Финам»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/39694" rel="self"/>
+<link href="https://bank.finam.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000627" rel="cbrf"/>
+</bank>
+<bank>
+<id>40243</id>
+<name>Первобанк</name> 
+<company>ОАО «Первый Объединенный Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/40243" rel="self"/>
+<link href="http://www.pervobank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=360001737" rel="cbrf"/>
+</bank>
+<bank>
+<id>40622</id>
+<name>Пойдём!</name> 
+<company>ОАО КБ «Пойдём!»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/40622" rel="self"/>
+<link href="http://www.icb-nsk.com/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=500000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>42011</id>
+<name>Банкирский Дом</name> 
+<company>ЗАО АКБ «Банкирский Дом»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/42011" rel="self"/>
+<link href="http://www.bankirdom.com/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000007" rel="cbrf"/>
+</bank>
+<bank>
+<id>42172</id>
+<name>Банк Проектного Финансирования</name> 
+<company>ЗАО АБ «Банк Проектного Финансирования»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/42172" rel="self"/>
+<link href="https://www.bpf.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=450000133" rel="cbrf"/>
+</bank>
+<bank>
+<id>42652</id>
+<name>Балтинвестбанк</name> 
+<company>ОАО Балтинвестбанк</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/42652" rel="self"/>
+<link href="http://baltinvestbank.com" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000022" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/45/85/ce41bdb4530fa695fff0662f042fc61a_197x68.png" rel="logo"/>
+</bank>
+<bank>
+<id>43267</id>
+<name>БКС Банк</name> 
+<company>БКС Банк</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/43267" rel="self"/>
+<link href="http://bcs-bank.com" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=500000013" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/64/5/776436e1789179a6ee5e6ea3ff5e6ae7_165x62.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>47035</id>
+<name>Агросоюз</name> 
+<company>Агросоюз</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/47035" rel="self"/>
+<link href="http://www.asbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=530000007" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/11/39/6e7775729ad3c5851136168a142d46f1_167x52.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>47340</id>
+<name>Смартбанк</name>
+<company>ЗАО «Смартбанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/47340" rel="self"/>
+<link href="http://smartbank.msk.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450041925" rel="cbrf"/>
+</bank>
+<bank>
+<id>47342</id>
+<name>Монолит</name> 
+<company>ООО КБ «Монолит»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/47342" rel="self"/>
+<link href="http://www.monolitbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000225" rel="cbrf"/>
+</bank>
+<bank>
+<id>48244</id>
+<name>МДМ Банк</name> 
+<company>ОАО "МДМ Банк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/48244" rel="self"/>
+<link href="http://www.mdm.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=500000008" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/62/98/fa7620b290db883a9d8d59cda00f1119_228x80.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>48277</id>
+<name>КИТ Финанс Инвестиционный банк</name> 
+<company>КИТ Финанс Инвестиционный банк</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/48277" rel="self"/>
+<link href="http://www.kf.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000021" rel="cbrf"/>
+</bank>
+<bank>
+<id>48596</id>
+<name>Банк Советский</name> 
+<company>Банк Советский</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/48596" rel="self"/>
+<link href="http://www.sovbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=190000002" rel="cbrf"/>
+</bank>
+<bank>
+<id>49317</id>
+<name>Инвест-Экобанк</name> 
+<company>ООО КБ «Инвест-Экобанк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/49317" rel="self"/>
+<link href="http://www.ecobank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=180000003" rel="cbrf"/>
+</bank>
+<bank>
+<id>50346</id>
+<name>РосинтерБанк</name> 
+<company>ЗАО КБ "Росинтербанк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/50346" rel="self"/>
+<link href="http://www.rosinterbank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000340" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/55/67/18edee3649202cba747211cb7ae87950_240x34.png" rel="logo"/>
+</bank>
+<bank>
+<id>54763</id>
+<name>Плюс Банк</name> 
+<company>ОАО «Плюс Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/54763" rel="self"/>
+<link href="http://www.plus-bank.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=520000012" rel="cbrf"/>
+</bank>
+<bank>
+<id>55474</id>
+<name>Национальный Залоговый Банк</name> 
+<company>ОАО «Национальный Залоговый Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/55474" rel="self"/>
+<link href="http://www.nz.ru/" rel="www"/>
+<link href="http://cbr.ru/credit/coinfo.asp?id=460000004" rel="cbrf"/>
+</bank>
+<bank>
+<id>55893</id>
+<name>Банк Москвы</name> 
+<company>ОАО Банк Москвы</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/55893" rel="self"/>
+<link href="http://www.bm.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000601" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/66/49/d4e6a3461b2c0ddbd5b549148e14ddb8_157x40.jpg" rel="logo"/>
+</bank>
+<bank>
+<id>55964</id>
+<name>Легион</name> 
+<company>АКБ "Легион" (ОАО)</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/55964" rel="self"/>
+<link href="http://lgn.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450001048" rel="cbrf"/>
+</bank>
+<bank>
+<id>58363</id>
+<name>МТС Банк</name> 
+<company>ОАО МТС Банк</company> 
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/58363" rel="self"/>
+<link href="http://www.mtsbank.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000343" rel="cbrf"/>
+<link href="http://cs-thumb.yandex.net/pic/uslugi/45/66/2b0594c103b044f8323fd809b0df6736_185x42.png" rel="logo"/>
+</bank>
+<bank>
+<id>61205</id>
+<name>РусСлавБанк</name> 
+<company>ЗАО АКБ «Русский Славянский Банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/61205" rel="self"/>
+<link href="http://www.russlavbank.com/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=450000010" rel="cbrf"/>
+</bank>
+<bank>
+<id>62055</id>
+<name>Невский банк</name> 
+<company>ОАО «Невский народный банк»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/62055" rel="self"/>
+<link href="http://www.nevskybank.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=760000002" rel="cbrf"/>
+</bank>
+<bank>
+<id>62578</id>
+<name>Кредит-Москва</name> 
+<company>Кредит-Москва</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/62578" rel="self"/>
+<link href="http://www.cmbank.ru" rel="www"/>
+</bank>
+<bank>
+<id>63870</id>
+<name>Город</name> 
+<company>ЗАО АКБ «Город»</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/63870" rel="self"/>
+<link href="http://www.bankgorod.ru/" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=870000002" rel="cbrf"/>
+</bank>
+<bank>
+<id>63980</id>
+<name>ПромСервисБанк</name> 
+<company>ООО "ПромСервисБанк"</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/63980" rel="self"/>
+<link href="http://www.psb.ru" rel="www"/>
+</bank>
+<bank>
+<id>64667</id>
+<name>Пушкино</name> 
+<company>ОАО АБ Пушкино</company>
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/64667" rel="self"/>
+<link href="http://www.pushkino.ru" rel="www"/>
+</bank>
+<bank>
+<id>65251</id>
+<name>АБ РОССИЯ</name> 
+<company>ОАО "АБ "РОССИЯ"</company> 
+<rating>
+<stars/><value/></rating>
+<link href="http://api.uslugi.yandex.ru/1.0/banks/65251" rel="self"/>
+<link href="http://abr.ru" rel="www"/>
+<link href="http://www.cbr.ru/credit/coinfo.asp?id=400000023" rel="cbrf"/>
+</bank>
+</banks>

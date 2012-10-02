@@ -44,12 +44,12 @@
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
                 <ListBoxItem>
-                    <StackPanel x:Name="Estate" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                    <StackPanel x:Name="Personal" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
                         <Image Stretch="UniformToFill"
-                                           Source="Images/credit_estate.png"
+                                           Source="Images/credit_personal.png"
                                            Height="140"
                                            Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
-                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Кредиты на недвижимость" />
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Потребительские" />
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
@@ -62,12 +62,12 @@
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
-                    <StackPanel x:Name="Personal" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
+                    <StackPanel x:Name="Mortgage" Orientation="Vertical" HorizontalAlignment="Left" Width="190" Height="190" eff:TurnstileFeatherAnimator.IsElement="True">
                         <Image Stretch="UniformToFill"
-                                           Source="Images/credit_personal.png"
+                                           Source="Images/credit_estate.png"
                                            Height="140"
                                            Width="140" eff:TurnstileFeatherAnimator.IsElement="True"/>
-                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Потребительские" />
+                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="200" Height="100" Foreground="Black" Text="Кредиты на недвижимость" />
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>

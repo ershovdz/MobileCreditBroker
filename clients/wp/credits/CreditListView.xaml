@@ -1,0 +1,75 @@
+﻿<eff:AnimatedBasePage 
+    x:Class="Credits.CreditListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    xmlns:local="clr-namespace:Credits"
+    xmlns:eff="clr-namespace:Credits.Effects"
+  	xmlns:tilteffect="clr-namespace:Credits.Effects">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Margin="24,24,24,24">
+        <Grid.Background>
+            <ImageBrush  ImageSource="Images/Background.jpg" Stretch="Uniform"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" x:Name="TitlePanel" Margin="0,0,0,0">
+            <local:Informer TitleText="Список кредитов"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,20,0,0">
+            <ListBox Name="CreditList" tilteffect:TiltEffect.IsTiltEnabled="True" Foreground="Black" VerticalAlignment="Stretch" Loaded="OnListBoxLoaded" Grid.ColumnSpan="3">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+<!--                        <TextBlock FontFamily="Segoe WP Light" FontSize="20" TextAlignment="Left" TextWrapping="Wrap" Width="450" Height="100" Foreground="Black" Text="{Binding Path=Name}" />
+-->
+                        <Grid eff:TurnstileFeatherAnimator.IsElement="True">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="10"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="20"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="25" Foreground="Black" Text="{Binding Path=Name}" />
+                            <StackPanel Grid.Row="2" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Диапазон кредита" Width="250" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=MaxSum}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Годовая % ставка" Width="250" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rate}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Условия" Width="250" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Period}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Первый взнос" Width="250" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=InitialInstalment}" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Банк" Width="250" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Bank}" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</eff:AnimatedBasePage>

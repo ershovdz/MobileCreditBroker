@@ -69,12 +69,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreditListView.xaml.cs">
+      <DependentUpon>CreditListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentModel.cs" />
     <Compile Include="CreditOptionsView.xaml.cs">
       <DependentUpon>CreditOptionsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="CreditSelectionView.xaml.cs">
       <DependentUpon>CreditSelectionView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataManager.cs" />
+    <Compile Include="Loaders\CollectionContentLoader.cs" />
+    <Compile Include="Loaders\IContentLoader.cs" />
     <Compile Include="StartView.xaml.cs">
       <DependentUpon>StartView.xaml</DependentUpon>
     </Compile>
@@ -117,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="AboutProgramView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CreditListView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -184,6 +195,7 @@
     <Resource Include="Images\deposit.png" />
     <Content Include="Resources\about_program.xml" />
     <Resource Include="Images\SplashScreenImage.jpg" />
+    <Content Include="Resources\Data\info.xml" />
     <Content Include="SplashScreenImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -215,6 +227,7 @@
       <LastGenOutput>AppResources.ru-RU.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

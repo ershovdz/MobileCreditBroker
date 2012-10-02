@@ -49,7 +49,7 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/search_appbar.png" Text="найти"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/search_appbar.png" Text="найти" Click="OnSearchButtonClick"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </local:CreditsBaseView>
