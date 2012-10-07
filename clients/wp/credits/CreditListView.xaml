@@ -14,7 +14,12 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     xmlns:local="clr-namespace:Credits"
     xmlns:eff="clr-namespace:Credits.Effects"
+    xmlns:c="clr-namespace:Credits.Converters"
   	xmlns:tilteffect="clr-namespace:Credits.Effects">
+
+    <UserControl.Resources>
+        <c:PercentFormatConverter x:Key="PercentFormatConverter" />
+    </UserControl.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Margin="24,24,24,24">
@@ -46,20 +51,20 @@
                             <TextBlock Grid.Row="0" FontFamily="Segoe WP" TextWrapping="Wrap" FontSize="25" Foreground="Black" Text="{Binding Path=Name}" />
                             <StackPanel Grid.Row="2" Orientation="Vertical">
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Диапазон кредита" Width="250" />
-                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=MaxSum}" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Диапазон кредита" Width="250"/>
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rates[0].MaxSum}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Годовая % ставка" Width="250" />
-                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rate}" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rates[0], Converter={StaticResource PercentFormatConverter}, ConverterParameter=Percentage}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Условия" Width="250" />
-                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Period}" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rates[0].MaxPeriod}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Первый взнос" Width="250" />
-                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=InitialInstalment}" />
+                                    <TextBlock FontFamily="Segoe WP" FontSize="25" TextWrapping="Wrap" Foreground="Black" Text="{Binding Path=Rates[0], Converter={StaticResource PercentFormatConverter}, ConverterParameter=MinInitialInstalment}" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontFamily="Segoe WP" FontSize="20" TextWrapping="Wrap" Foreground="Black" Text="Банк" Width="250" />

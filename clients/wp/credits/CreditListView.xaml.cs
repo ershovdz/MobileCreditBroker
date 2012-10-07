@@ -101,10 +101,40 @@ namespace Credits
                     Id = elem.Element("id").Value,
                     Link = elem.Element("link").Value,
                     Bank = elem.Element("bank").Element("name").Value,
+                    Rates = InitializeRates(elem.Element("rates"))
                 };
 
                 this.CreditList.Items.Add(credit);
             }
+        }
+
+        private List<Rate> InitializeRates(XElement rates)
+        {
+            List<Rate> res = new List<Rate>();
+            if (rates != null)
+            {
+                foreach (var node in rates.Elements())
+                {
+                    Rate rate = new Rate
+                    {
+                        Currency = node.Element("currency") == null ? String.Empty : node.Element("currency").Value,
+                        MinValue = node.Element("min-value") == null ? 0 : Convert.ToDouble(node.Element("min-value").Value),
+                        MaxValue = node.Element("max-value") == null ? 0 : Convert.ToDouble(node.Element("max-value").Value),
+                        BaseCoefficient = node.Element("base-coefficient") == null ? String.Empty : node.Element("base-coefficient").Value,
+                        MinInitialInstalment = node.Element("min-initial-instalment") == null ? 0 : Convert.ToDouble(node.Element("min-initial-instalment").Value),
+                        MaxInitialInstalment = node.Element("max-initial-instalment") == null ? 0 : Convert.ToDouble(node.Element("max-initial-instalment").Value),
+                        MinPeriod = node.Element("min-period") == null ? 0 : Convert.ToInt16(node.Element("min-period").Value),
+                        MaxPeriod = node.Element("max-period") == null ? 0 : Convert.ToInt16(node.Element("max-period").Value),
+                        MinSum = node.Element("min-sum") == null ? 0 : Convert.ToInt32(node.Element("min-sum").Value),
+                        MaxSum = node.Element("max-sum") == null ? 0 : Convert.ToInt32(node.Element("max-sum").Value),
+                        StateProgramDiscount = node.Element("state-program-discount") == null ? 0 : Convert.ToDouble(node.Element("state-program-discount").Value)
+                    };
+
+                    res.Add(rate);
+                }
+            }
+
+            return res;
         }
     }
 }

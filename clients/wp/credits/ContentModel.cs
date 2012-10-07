@@ -65,7 +65,87 @@ namespace Credits
             get { return m_min_balance; }
             set { m_min_balance = value; }
         }
+    }
 
+    public class Rate
+    {
+        string m_currency;
+        double m_min_value;
+        double m_max_value;
+        string m_base_coefficient;
+        double m_min_initial_instalment;
+        double m_max_initial_instalment;
+        int m_min_period;
+        int m_max_period;
+        int m_min_sum;
+        int m_max_sum;
+        double m_state_program_discount;
+
+        public string Currency
+        {
+            get { return m_currency; }
+            set { m_currency = value; }
+        }
+
+        public double MinValue
+        {
+            get { return m_min_value; }
+            set { m_min_value = value; }
+        }
+
+        public double MaxValue
+        {
+            get { return m_max_value; }
+            set { m_max_value = value; }
+        }
+
+        public string BaseCoefficient
+        {
+            get { return m_base_coefficient; }
+            set { m_base_coefficient = value; }
+        }
+
+        public double MinInitialInstalment
+        {
+            get { return m_min_initial_instalment; }
+            set { m_min_initial_instalment = value; }
+        }
+
+        public double MaxInitialInstalment
+        {
+            get { return m_max_initial_instalment; }
+            set { m_max_initial_instalment = value; }
+        }
+
+        public int MinPeriod
+        {
+            get { return m_min_period; }
+            set { m_min_period = value; }
+        }
+
+        public int MaxPeriod
+        {
+            get { return m_max_period; }
+            set { m_max_period = value; }
+        }
+
+        public int MinSum
+        {
+            get { return m_min_sum; }
+            set { m_min_sum = value; }
+        }
+
+        public int MaxSum
+        {
+            get { return m_max_sum; }
+            set { m_max_sum = value; }
+        }
+
+        public double StateProgramDiscount
+        {
+            get { return m_state_program_discount; }
+            set { m_state_program_discount = value; }
+        }
     }
 
     public class Deposit
@@ -76,7 +156,7 @@ namespace Credits
         string m_description;
         string m_bank;
         string m_restrictions;
-        string m_rates;
+        Rate[] m_rates;
         PartialWithdrawal m_partial_withdrawal;
         DataWithRestrictions m_replenishment;
         string m_rate_increase;
@@ -192,7 +272,6 @@ namespace Credits
         string m_link;
         string m_description;
         string m_bank;
-        string m_restrictions;
         string m_payment;
         string m_commision;
         string m_adv_repayment;
@@ -203,9 +282,7 @@ namespace Credits
         string m_decision_timing;
         string m_additional_info;
         string m_insurance;
-        string m_purpose;
-        string m_locus_contractus;
-        string m_rates;
+        List<Rate> m_rates;
 
         public string Name
         {
@@ -235,12 +312,6 @@ namespace Credits
         {
             get { return m_bank; }
             set { m_bank = value; }
-        }
-
-        public string Restrictions
-        {
-            get { return m_restrictions; }
-            set { m_restrictions = value; }
         }
 
         public string Payment
@@ -303,6 +374,40 @@ namespace Credits
             set { m_insurance = value; }
         }
 
+        public List<Rate> Rates
+        {
+            get { return m_rates; }
+            set { m_rates = value; }
+        }
+
+        public Rate Rate1
+        {
+            get { return m_rates.Count != 0 ? null : m_rates[0]; }
+        }
+ 
+ /*       public string Rate
+        {
+            get 
+            { 
+                return m_rates.Count == 0 ? null : "TestTestTest"; 
+            }
+        }
+  */
+    }
+
+
+    public class PersonalCredit : Credit
+    {
+        string m_restrictions;
+        string m_purpose;
+        string m_locus_contractus;
+
+        public string Restrictions
+        {
+            get { return m_restrictions; }
+            set { m_restrictions = value; }
+        }
+
         public string Purpose
         {
             get { return m_purpose; }
@@ -314,14 +419,7 @@ namespace Credits
             get { return m_locus_contractus; }
             set { m_locus_contractus = value; }
         }
-
-        public string Rates
-        {
-            get { return m_rates; }
-            set { m_rates = value; }
-        }
     }
-
 
     public class AutoCredit : Credit
     {

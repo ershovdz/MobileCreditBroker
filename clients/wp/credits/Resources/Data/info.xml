@@ -628,11 +628,11 @@
 <currency>USD</currency>
 <min-value>12.0</min-value>
 <max-value>17.0</max-value>
-<min-initial-instalment>10.0</min-initial-instalment>
+<min-initial-instalment>20.0</min-initial-instalment>
 <min-period interval="YEAR">1</min-period>
-<max-period interval="MONTH">60</max-period>
+<max-period interval="MONTH">30</max-period>
 <min-sum currency="USD">4000</min-sum>
-<max-sum currency="USD">100000</max-sum>
+<max-sum currency="USD">12123</max-sum>
 </rate>
 <rate>
 <currency>USD</currency>
