@@ -64,7 +64,7 @@ namespace Credits
             m_loadInProgress = true;
             ThreadPool.QueueUserWorkItem((state) =>
             {
-                link += "?page=" + Convert.ToString(page);
+                //link += "?page=" + Convert.ToString(page);
                 XElement res = LoadFromLocal(link);
                 if (res == null)
                 {

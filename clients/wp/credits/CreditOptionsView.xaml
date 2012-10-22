@@ -32,17 +32,17 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" x:Name="ContentPanel" Margin="0,20,0,0">
-            <StackPanel x:Name="Sum" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Сумма кредита:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="260" InputScope="Digits"/>
+                <TextBox Name="Sum" Width="260" InputScope="Digits"/>
             </StackPanel>
-            <StackPanel x:Name="Period" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Срок кредита:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="280" InputScope="Digits"/>
+                <TextBox Name="Period" Width="280" InputScope="Digits"/>
             </StackPanel>
-            <StackPanel x:Name="Percentage" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Процент до:" VerticalAlignment="Center" Foreground="Brown" FontSize="25"/>
-                <TextBox Width="300" InputScope="Digits"/>
+                <TextBox Name="Percentage" Width="300" InputScope="Digits"/>
             </StackPanel>
         </StackPanel>
     </Grid>

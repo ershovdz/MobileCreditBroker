@@ -38,7 +38,8 @@ namespace Credits.Loaders
             {
                 if (m_context != null && m_context.Url != "")
                 {
-                    Uri serviceUri = new Uri(m_context.Url + "&" + DateTime.Now.ToString());
+                    Uri serviceUri = new Uri(m_context.Url);
+                    m_downloader.Headers[HttpRequestHeader.Referer] = "http://lab3d.ru";
                     m_downloader.OpenReadAsync(serviceUri);
                 }
                 else

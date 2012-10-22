@@ -73,7 +73,7 @@ namespace Credits
         
         private void OnSearchButtonClick(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/CreditListView.xaml?Type=" + m_creditType, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/CreditListView.xaml?Type=" + m_creditType + "&Sum=" + Sum.Text + "&Period=" + Period.Text, UriKind.Relative));
         }
     }
 }

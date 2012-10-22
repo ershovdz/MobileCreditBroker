@@ -49,8 +49,11 @@ namespace Credits
             base.OnNavigatedTo(e);
 
             m_creditType = this.NavigationContext.QueryString["Type"];
+            string sum = this.NavigationContext.QueryString["Sum"];
+            string period = this.NavigationContext.QueryString["Period"];
 
-            m_dataManager.LoadCollectionContent("http://lab3d.ru/credit_broker/info.xml", 1);
+            String link = "http://api.uslugi.yandex.ru/1.0/banks/" + m_creditType + "s/search?key=Lc1XBwACAAABOfd5Qj7Zg8EfLLjqDFu9esRUVkAFCoWX3g&region=moscow&currency=RUB&sum=" + sum + "&period=" + period + " months";
+            m_dataManager.LoadCollectionContent(link, 1);
         }
 
         void OnListBoxLoaded(object sender, RoutedEventArgs e)
@@ -93,18 +96,21 @@ namespace Credits
         private void OnLoadCompleted(object sender, LoadContentEventArgs args)
         {
             XElement data = args.Data;
-            foreach (var elem in data.Descendants(m_creditType))
+            if (data != null)
             {
-                Credit credit = new Credit
+                foreach (var elem in data.Descendants(m_creditType))
                 {
-                    Name = HtmlToXamlConverter.ConvertHtmlToXml(elem.Element("name").Value).Value,
-                    Id = elem.Element("id").Value,
-                    Link = elem.Element("link").Value,
-                    Bank = elem.Element("bank").Element("name").Value,
-                    Rates = InitializeRates(elem.Element("rates"))
-                };
+                    Credit credit = new Credit
+                    {
+                        Name = HtmlToXamlConverter.ConvertHtmlToXml(elem.Element("name").Value).Value,
+                        Id = elem.Element("id").Value,
+                        Link = elem.Element("link").Value,
+                        Bank = elem.Element("bank").Element("name").Value,
+                        Rates = InitializeRates(elem.Element("short"))
+                    };
 
-                this.CreditList.Items.Add(credit);
+                    this.CreditList.Items.Add(credit);
+                }
             }
         }
 
